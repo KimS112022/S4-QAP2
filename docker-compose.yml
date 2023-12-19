@@ -1,0 +1,8 @@
+version: '3'
+services:
+    qap2_s4:
+        image: kims72/qap2_s4:latest
+        ports:
+          - 8080:8080
+        environment:
+          - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/qap2_s4
